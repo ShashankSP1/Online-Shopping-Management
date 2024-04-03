@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(238, 232, 232);
+}
+
+.i {
+    margin-right: 5px;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: rgba(231, 226, 226, 0.1);
+  }
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #ffffff;
+  }
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown:hover{
+    display: block;
+  }
+
+
+#desc {
+    text-align: center;
+}
+
+#desc2 {
+    text-align: center;
+    color: rgb(3, 126, 3);
+}
+
+#desc3 {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#icon {
+    max-height: 40px;
+    max-width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#login {
+    margin-right: 10px;
+}
+
+
+#sign {
+    color: rgb(6, 138, 57);
+    margin-left: 40px;
+}
+
+#topoffers {
+    width: 64px;
+    height: 64px;
+    text-align: center;
+}
+
+#zone1 {
+    max-width: 100%;
+    height: auto;
+}
+
+#zone2 {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.card-img-top {
+    height: 250px;
+  }
+  .card-img-top2 {
+    width: 100%; /* Make images fill their container */
+    height: auto; /* Maintain aspect ratio */
+  }

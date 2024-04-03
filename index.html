@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Online Shopping</title>
+
+</head>
+
+<body>
+
+  <div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+      <div class="container-fluid">
+        <img src="Images/flipkart.jpg" alt="flipkart" id="icon">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"><i class="bi bi-house-door"></i>
+                Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="cart.html"><i class="bi bi-cart2"></i> Cart</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link text-white" href="become_a _seller.html"><i class="bi bi-inboxes-fill"></i> Become a Seller</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><i class="bi bi-person-circle"></i> Login / Sign Up</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="signup.html">New Customer?<span id="sign"><strong>Sign
+                        Up</strong></span></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="login_form.html"><i class="bi bi-person-circle" id="login"></i> My
+                    Profile</a>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-bag-plus-fill" id="login"></i> Flipkart Plus
+                    Zone</a>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-box" id="login"></i> Orders</a>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-heart-fill" id="login"></i> Whishlist</a>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-gift-fill" id="login"></i> Rewards</a>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-wallet-fill" id="login"></i> Giftcards</a>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-disabled="true" href="contact_us.html"><i class="bi bi-telephone"></i>
+                Contact Us</a>
+            </li>
+
+          </ul>
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-5 mb-2 border-1">
+      <div class="card">
+        <div class="card-body">
+          <div class="row" style="font-size: small;">
+
+            <div class="col">
+              <a href="#" aria-label="Top Offers" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Top Offers" src="Images/top offers1.jpg" >
+                </div>
+                <span>Top Offers</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="Home &amp; Kitchen" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Home &amp; Kitchen" src="Images/top offers2.jpg">
+                </div>
+                <span>Home & Kitchen</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="Beauty" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Beauty" src="Images/top offers3.jpg">
+                </div>
+                <span>Beauty</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="Furniture" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Furniture" src="Images/top offers4.jpg">
+                </div>
+                <span>Furniture</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="Fashion" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Fashion" src="Images/top offers.jpg">
+                </div>
+                <span>Fashion</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="Mobiles &amp; Tablets" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Mobiles &amp; Tablets" src="Images/top offers5.jpg">
+                </div>
+                <span>Mobiles &amp; Tablets</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="Electronics" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Electronics" src="Images/top offers6.jpg">
+                </div>
+                <span>Electronics</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="Grocery" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Grocery" src="Images/top offers7.jpg">
+                </div>
+                <span>Grocery</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="Flights" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="Flights" src="Images/top offers8.jpg">
+                </div>
+                <span>Flights</span>
+              </a>
+            </div>
+
+            <div class="col">
+              <a href="#" aria-label="TVs &amp; Appliances" style="text-decoration: none;">
+                <div id="topoffers">
+                  <img alt="TVs &amp; Appliances" src="Images/top offers9.jpg">
+                </div>
+                <span>TVs &amp; Appliances</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+        style="margin-top: 10px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <a href="https://www.google.com">
+              <img src="Images/crsl1.jpg" class="d-block w-100" alt="img">
+            </a>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#">
+              <img src="Images/crsl2.jpg" class="d-block w-100 h-auto" alt="img">
+            </a>
+          </div>
+
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#">
+              <img src="Images/crsl3.jpg" class="d-block w-100" alt="img">
+            </a>
+          </div>
+
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#">
+              <img src="Images/crsl4.jpg" class="d-block w-100" alt="img">
+            </a>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#">
+              <img src="Images/crsl5.jpg" class="d-block w-100" alt="img">
+            </a>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <a href="#">
+              <img src="Images/crsl6.jpg" class="d-block w-100" alt="img">
+            </a>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2 mb-2 border-1">
+      <div class="card">
+        <div class="card-body">
+          <a href="https://www.onlinesbi.sbi/" target="_blank" class="d-block">
+            <img src="Images/Bank offers.jpg" class="img-fluid" alt="Bank Offers">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2 mb-2 border-1">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-10">
+              <h5 class="mb-4 mt-4">Best Mobiles</h5>
+            </div>
+            <div class="col-md-2">
+              <a href="#">
+                <button class="btn btn-outline-success">See More</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/motorola g.jpg" alt="mobile" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Motorola G54 5G</span>
+                  <strong id="desc">incl of offers</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/vivo.jpg" alt="mobile" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Vivo T2 Pro 5G</span>
+                  <strong id="desc">incl of offers</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/oppo.jpg" alt="mobile" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Oppo Reno10 5G</span>
+                  <strong id="desc">incl of offers</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/samsung s21.jpg" alt="mobile" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Samsung Galaxy S21</span>
+                  <strong id="desc">incl of offers</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/poco.jpg" alt="mobile" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Poco F5 5G</span>
+                  <strong id="desc">incl of offers</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/realme.jpg" alt="mobile" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Realme 11 Pro 5G</span>
+                  <strong id="desc">incl of offers</strong>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone mobile.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone laptop.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone ac.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-10">
+              <h5 class="mt-3 mb-4">Top Deals</h5>
+            </div>
+            <div class="col-md-2">
+              <a href="#">
+                <button class="btn btn-outline-success">See More</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Hotselling Sarees</span>
+                  <strong id="desc">60-70% Off</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals jwls.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Earrings & Jewellary</span>
+                  <strong id="desc">Upto 75% Off</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals2.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Jack & Johns, UCB</span>
+                  <strong id="desc"> min. 70% Off</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals kurta.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Kurtas, sets & more</span>
+                  <strong id="desc">Upto 60 % Off</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals shoes.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Adidas, Puma & more</span>
+                  <strong id="desc">60-70% Off</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals6.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                  <span id="desc">Tokyo Talkies, Clovia</span>
+                  <strong id="desc">Upto 85% Off</strong>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone2 mobile.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone2 plane.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone2 kitchen.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="mt-2 mb-4">Featured Brands</h5>
+          <div class="row">
+
+            <div class="col-md-4">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/featured brands1.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/featured brands2.jpg" alt="image" id="zone1" class="img-fluid" >
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/featured brands3.jpg" alt="image"  id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone4 ref.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone4 tvs.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/zone4 vac.jpg" alt="image" id="zone1" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-10">
+              <h5 class="mt-3 mb-4">Top Deals on Electronics</h5>
+            </div>
+            <div class="col-md-2">
+              <a href="#">
+                <button class="btn btn-outline-success" id="btn">See More</button>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals11.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Mobile Speakers</span>
+                <strong id="desc">Starts from 599</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals12.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Best-selling Watches</span>
+                <strong id="desc">Starts from 799</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals13.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Best-selling Tablets</span>
+                <strong id="desc">Starts from 30900</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals14.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Top deals on Monitos</span>
+                <strong id="desc"> Starts From 30900</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals15.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Tablet Cases & Covers</span>
+                <strong id="desc">Strats from 299</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/top deals16.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Mobile Chargers</span>
+                <strong id="desc">Starts from 199</strong>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 mt-2">
+              <a href="#">
+                <img src="Images/zone mobile.jpg" alt="mobile zone" id="zone1" class="img-fluid">
+              </a>
+            </div>
+
+
+            <div class="col-md-4 mt-2">
+              <a href="#">
+                <img src="Images/zone laptop.jpg" alt="laptop zone" id="zone1" class="img-fluid">
+              </a>
+            </div>
+
+
+            <div class="col-md-4 mt-2">
+              <a href="#">
+                <img src="Images/zone ac.jpg" alt="ac zone" id="zone1" class="img-fluid">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-10">
+              <h5 class="mt-3 mb-4">Fashion Best Sellers</h5>
+            </div>
+            <div class="col-md-2">
+              <a href="#">
+                <button class="btn btn-outline-success">See More</button>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/fashion11.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Kurtas, Sets & more</span>
+                <strong id="desc">Starts from <i class="bi bi-currency-rupee"></i>299</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/fashion13.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Rebok, Puma & more</span>
+                <strong id="desc">Starts from 799</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/fashion14.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Stylish Sarees</span>
+                <strong id="desc">Under 899</strong>
+
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/fashion19.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">American Tourister Bag</span>
+                <strong id="desc">Starts from 3999</strong>
+
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/fashion18.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Ladies Daily wears</span>
+                <strong id="desc">Starts from 599</strong>
+              </div>
+            </div>
+
+            <div class="col mt-2">
+              <div class="card">
+                <a href="#">
+                  <img src="Images/fashion20.jpg" alt="image" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc">Sparx, Bata & more</span>
+                <strong id="desc">Starts from 299</strong>
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="container-fluid mt-2">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col mt-2">
+            <div class="card">
+              <a href="#">
+                <img src="Images/Endof1.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Speakers & more</span>
+              <strong id="desc2">Grab or Gone</strong>
+            </div>
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/Endof3.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Smart Watches</span>
+              <strong id="desc2">Min. 70% off</strong>
+            </div>
+          </div>
+
+          <div class="col mt-2">
+            <div class="card">
+              <a href="#">
+                <img src="Images/Endof2.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Wrist Watches</span>
+              <strong id="desc2">Min. 90% Off</strong>
+            </div>
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/Endof4.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Men's Sweatshirts</span>
+              <strong id="desc2">min. 50% Off</strong>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-8 mt-3">
+            <div class="card">
+              <a href="#">
+                <img class="d-block w-100" alt="a" src="Images/endof28.jpg">
+                <img class="d-block w-100" alt="A" src="Images/endof27.jpg">
+                <img class="d-block w-100" alt="A" src="Images/endof26.jpg">
+                <img class="d-block w-100" alt="A" src="Images/Endof25.jpg">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-2">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-md-4 mt-2">
+            <a href="#">
+              <img src="Images/zone51.jpg" alt="img" id="zone1" class="img-fluid">
+            </a>
+            <a href="#">
+              <img src="Images/zone52.jpg" alt="img" id="zone2" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="col-md-4 mt-2">
+            <a href="#">
+              <img src="Images/zone5.jpg" alt="img" id="zone1" class="img-fluid">
+            </a>
+            <a href="#">
+              <img src="Images/zone54.jpg" alt="img" id="zone2" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="col-md-4 mt-2">
+            <a href="#">
+              <img src="Images/zone55.jpg" alt="img" id="zone1" class="img-fluid">
+            </a>
+            <a href="#">
+              <img src="Images/zone55.jpg" alt="img" id="zone2" class="img-fluid">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-2">
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+            <h5 id="desc" class="mt-3">Winter Essentials</h5>
+            <div class="row">
+
+          <div class="col">
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/1 mens sports shoes.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Mens Sports Shoes</span>
+              <strong id="desc2">Starts from 599</strong>
+            </div>
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/1 women printed ankle length.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Womens Ankle Length</span>
+              <strong id="desc2">Min. 70% Off</strong>
+            </div>
+            </div>
+
+            <div class="col">
+              <div class="card mt-3">
+                <a href="#">
+                  <img src="Images/1 Mens Full sleeve sweatwear.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc3">Mens Sports Shoes</span>
+                <strong id="desc2">Starts from 599</strong>
+              </div>
+              <div class="card mt-3">
+                <a href="#">
+                  <img src="Images/1 Mens Track suits.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+                </a>
+                <span id="desc3">Womens Ankle Length</span>
+                <strong id="desc2">Min. 70% Off</strong>
+              </div>
+              </div>
+            </div>
+            </div>
+            </div>
+
+        <div class="col-md-4 mt-3">
+          <div class="card">
+            <h5 id="desc" class="mt-3">Home Decors & Furnishing</h5>
+            <div class="row">
+
+          <div class="col">
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/2 plant samplings.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Plant Samplings</span>
+              <strong id="desc2">Min. 60% Off</strong>
+            </div>
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/2 bedsheets.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Bed Sheets</span>
+              <strong id="desc2">min. 50% Off</strong>
+            </div>
+          </div>
+
+           <div class="col">
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/2 nightlight.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Wrist Watches</span>
+              <strong id="desc2">Starts from 799</strong>
+            </div>
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/2  waterproof camping torches.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">WaterProof Torches</span>
+              <strong id="desc2">min. 50% Off</strong>
+            </div>
+          </div>
+        </div>
+          </div>
+          </div>
+
+
+          <div class="col-md-4 mt-3">
+            <div class="card">
+            <h5 id="desc" class="mt-3">New Year Special</h5>
+            <div class="row">
+          <div class="col">
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/3 wrist watches.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Wrist Watches</span>
+              <strong id="desc2">Grab or Gone</strong>
+            </div>
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/3 wallets.jpg" alt="endof" class="card-img-top" style="padding: 10px;min-width: 130px;">
+              </a>
+              <span id="desc3">Wallet for Mens</span>
+              <strong id="desc2">Min. 70% off</strong>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/3 showpieces.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Show Pieces</span>
+              <strong id="desc2">Min. 90% Off</strong>
+            </div>
+            <div class="card mt-3">
+              <a href="#">
+                <img src="Images/3 jewellary.jpg" alt="endof" class="card-img-top" style="padding: 10px; min-width: 130px;">
+              </a>
+              <span id="desc3">Jewellary</span>
+              <strong id="desc2">min. 50% Off</strong>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div class="container-fluid mt-5">
+    <div style="margin-left: 10px; font-size: small;">
+      <h5>Flipkart: The One-stop Shopping Destination</h5>
+      E-commerce is revolutionizing the way we all shop in India.
+      Why do you want to hop from one store to another in search of the latest phone when you can find it on the
+      Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending
+      electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes,
+      clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to
+      appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving
+      kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and
+      musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here.
+      For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee
+      hours of the morning. This e-commerce never shuts down. <br><br>What's more, with our year-round shopping
+      festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you
+      had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to
+      you, well, the below will answer your question. <br><br>
+
+      <h6>Flipkart Plus</h6>
+      A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty
+      reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a
+      part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins &amp;
+      non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange
+      offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when
+      you shop more! <br><br>What's more, you can even use the Flipkart supercoins for a number of exciting services,
+      like:<br>An annual Zomato Gold membership<br>An annual Hotstar Premium membership<br>6 months Gaana plus
+      subscription<br>Rupees 550 instant discount on flights on ixigo<br>Check out
+      https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.<br><br>
+
+      <h6>No Cost EMI</h6>
+      In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you
+      to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large
+      and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your
+      pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look
+      ASAP! Terms and conditions apply.<br><br>
+
+      <h6>EMI on Debit Cards</h6>
+      Did you know debit card holders account for 79.38 crore in the country, while there
+      are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online
+      shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with
+      us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC
+      Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions
+      apply. <br><br>
+
+      <h6>Mobile Exchange Offers</h6>
+      Get an instant discount on the phone that you have been eyeing on. Exchange your
+      old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a
+      working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the
+      'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange
+      wherever possible. Terms and conditions apply. <br><br>
+
+      <h5>What Can You Buy From Flipkart?</h5>
+      <h6>Mobile Phones</h6>
+      From budget phones to state-of-the-art smartphones, we have a mobile for everybody out
+      there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors,
+      beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials.
+      Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few.
+      Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's
+      Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan
+      entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid
+      damage to phone, hardware and software glitches, and replacements - <b>the Flipkart Complete Mobile
+        Protection</b> covers a comprehensive range of post-purchase problems, with door-to-door services. <br><br>
+
+      <h6>Electronic Devices and Accessories</h6>
+      When it comes to laptops, we are not far behind. Filter among dozens
+      of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for
+      personalized results in a flash. All you students out there, confused about what laptop to get? Our <b>Back To
+        College Store</b> segregates laptops purpose wise (gaming, browsing and research, project work, entertainment,
+      design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping
+      experience that is quicker and simpler.<br><br>Photography lovers, you couldn't land at a better page than ours.
+      Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action
+      cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon,
+      Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't
+      land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial
+      favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners
+      as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.
+      <br><br>Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of
+      Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.<br><br>How about
+      jazzing up your phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting
+      from headphones, power banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel
+      companions for you and your phone; never again worry about running out of charge or memory on your next
+      vacation.<br><br>
+
+      <h6>Large Appliances</h6>
+      Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines
+      - discover everything you need to run a house under one roof. Our <b>Dependable TV and Appliance Store</b>
+      ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as
+      per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) -
+      rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like
+      Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many
+      others.<br><br>For certain product categories, Customers meeting the eligibility criteria will have the option
+      to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to
+      <a href="mailto:Purchases.oni@flipkart.com">Purchases.oni@flipkart.com</a>. <br><br>
+
+      <h6>Small Home Appliances</h6>
+      Find handy and practical home appliances designed to make your life simpler:
+      electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other
+      time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances
+      at home.<br><br>
+
+      <h6>Lifestyle</h6>
+      Flipkart, <b>'India ka Fashion Capital'</b>, is your one-stop fashion destination for anything
+      and everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter
+      clothing, formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and
+      accessories are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only,
+      Arrow, Woodland, Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer
+      staple maxi dresses, no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you
+      can rely on us for a wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen,
+      to name a few, for carefully curated designs that are the talk of the town. Get ready to be spoiled for
+      choice.Festivals, office get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each
+      time.<br><br>
+
+      <h6>Home and Furniture</h6>
+      Moving to a new place is never easy, especially if you're buying new furniture. Beds,
+      sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds
+      of options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the
+      test of time? These are questions you must ask before you choose a store. Well, our <b>Durability Certified
+        Furniture Store</b> has not only curated a range of furniture keeping in mind the modern Indian consumer but
+      furniture that comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture
+      has gone through 35 stability and load tests so that you receive only the best-quality furniture. <b>Be
+        FurniSure</b>, always. Names to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and
+      Perfect Homes. <br><br>You may have your furniture all set up, but they could end up looking flat and incomplete
+      without complementary decor. Curtains, cushion covers, bed sheets, wall shelves, paintings, floor lamps - find
+      everything that turns a house to an inviting home under one roof at Flipkart. <br><br>
+      <h6>Baby and Kids</h6>Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're
+      an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey
+      with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us
+      without a second thought. Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only the most-trusted
+      names in the business for your baby.<br><br>
+
+      <h6>Books, Sports and Games</h6>
+      Work hard and no play? We don't believe in that. Get access to best-selling
+      fiction and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted
+      gaming consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get
+      moving. <br><br>
+
+      <h6>Grocery/Supermart</h6>
+      Launching into the grocery vertical, Flipkart introduces <b>Supermart</b> that is out
+      to bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast
+      essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present
+      everything you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our <b>1 Rupee
+        Store</b> presents new products every day for a nominal price of 1 Rupee only. Terms and conditions apply.
+    </div>
+
+  </div>
+
+  <footer class="container-fluid mt-5 bg-dark">
+    <p class="text-white">Registered Office</p>
+  </footer>
+
+  <script>
+    var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleDark'), {
+      interval: 2,
+      wrap: true,
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.navbar-nav .dropdown').hover(
+        function () {
+          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(300);
+        },
+        function () {
+          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(300);
+        }
+      );
+    });
+  </script>
+
+<script>
+  function handleSearch(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+      var searchTerm = document.querySelector('input[type="search"]').value;
+      alert('Search term: ' + searchTerm);
+      // Add further processing logic here, such as redirecting to a search results page or making an API call
+  }
+</script>
+
+</body>
